@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_display_list_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="enib.ecp.Acheter"
+    android:background="@drawable/fond_vide"
+    android:paddingBottom="?attr/actionBarSize"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal|center_vertical">
+            <TextView
+                android:text="Panier :"
+                android:gravity="center"
+                android:textColor="#760808"
+                android:background="@drawable/leftroundedbutton"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:id="@+id/textView" />
+
+            <TextView
+                android:text="Montant"
+                android:textColor="#760808"
+                android:gravity="center"
+                android:background="@drawable/centerroundedbutton"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:id="@+id/shoppingCart"
+                android:inputType="numberDecimal"/>
+
+
+
+
+            <Button
+                android:text="Acheter"
+                android:layout_weight="1"
+                android:textColor="#760808"
+                android:gravity="center"
+                android:background="@drawable/rightroundedbutton"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:id="@+id/acheter"
+                android:onClick="majpanier" />
+
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/listview"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10.0dp"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="0.19"></ListView>
+
+
+    </LinearLayout>
+</RelativeLayout>

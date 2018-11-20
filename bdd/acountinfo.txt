@@ -1,0 +1,6 @@
+$mysql_host = "localhost";
+$mysql_database = "product_info";
+$password = "toto";
+$mysql_user = "root";
+
+Domain name : http://androidtut.comli.com/

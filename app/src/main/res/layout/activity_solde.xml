@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/fond_vide"
+    android:id="@+id/activity_solde"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="enib.ecp.Appli"
+    android:paddingBottom="?attr/actionBarSize"
+    android:alpha="1">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center_horizontal|center_vertical">
+
+                <TextView
+                    android:background="@drawable/roundedbutton"
+                    android:text="Votre solde"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="#760808"
+                    android:padding="5dp"
+                    android:id="@+id/Votresolde" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_horizontal|center_vertical">
+
+                <TextView
+                    android:padding="5dp"
+                    android:background="@drawable/roundedbutton"
+                    android:textColor="#760808"
+                    android:textSize="20dp"
+                    android:text="Merci de présenter votre carte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:id="@+id/solde"
+                    android:inputType="number"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center_horizontal|center_vertical">
+
+                <EditText
+                    android:background="@drawable/roundedbutton"
+                    android:textColorHint="#760808"
+                    android:textColor="#760808"
+                    android:hint="Entrez le montant à recharger"
+                    android:layout_centerInParent="true"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:padding="5dp"
+                    android:ems="10"
+                    android:id="@+id/new_balance"
+                    android:focusable="true" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_horizontal|center_vertical">
+
+                <TextView
+                    android:background="@drawable/leftroundedbutton"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="ID"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/tx_id"
+                    android:textColor="#760808"
+                    android:textSize="15dp"/>
+
+
+                <TextView
+                    android:background="@drawable/rightroundedbutton"
+                    android:textColor="#760808"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="SOLDE"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/tx_balance"
+                    />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical">
+
+                <Button
+                    android:background="@drawable/roundedbutton"
+                    android:textColor="#760808"
+                    android:text="Effectuer le rechargement"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/button3"
+                    android:onClick="recharger"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
+
+
